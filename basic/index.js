@@ -6,24 +6,24 @@ const app = Vue.createApp({
             brand:"Jockey",
             desc:"This is about Socks",
             image: './assets/images/socks_blue.jpg',
-            inStock: false,
+            inStock: true,
             onSale: false,
             details: ['50% cotton','30% wool'],
             sizes: ['XS','S','M','L','XL'],
-            showDelButton: false
+            // showDelButton: false
         }
     },
     methods:{
         addToCart(){
             
             this.cart+=1
-            if(this.cart > 0)
-                this.showDelButton=true
+            // if(this.cart > 0)
+            //     this.showDelButton=true
         },
         removeFromCart(){
             this.cart-=1
-            if(this.cart === 0)
-                this.showDelbutton = false
+            // if(this.cart === 0)
+            //     this.showDelbutton = false
         }
         
     },
