@@ -3,7 +3,9 @@ const app = Vue.createApp({
         return {
             product:"Socks",
             desc:"This is about Socks",
-            image: './assets/images/socks_blue.jpg'
+            image: './assets/images/socks_blue.jpg',
+            inStock: true,
+            onSale: false
         }
     }
 })
