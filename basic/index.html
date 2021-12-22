@@ -20,7 +20,7 @@
                     <img v-bind:src="image" alt="Unable to see the image" :class="{'out-of-stock-img'  : !inStock}">
                 </div>
                 <div class="product-info">
-                    <h1>{{ product }}</h1>
+                    <h1>{{ title }}</h1>
                     <p>{{ desc }}</p>
                     <p v-if="inStock">In Stock</p>
                     <p v-else>Out of Stock</p>

@@ -3,6 +3,7 @@ const app = Vue.createApp({
         return {
             cart:0,
             product:"Socks",
+            brand:"Jockey",
             desc:"This is about Socks",
             image: './assets/images/socks_blue.jpg',
             inStock: false,
@@ -23,6 +24,12 @@ const app = Vue.createApp({
             this.cart-=1
             if(this.cart === 0)
                 this.showDelbutton = false
+        }
+        
+    },
+    computed:{
+        title(){
+            return this.product+" from "+this.brand
         }
     }
 })
